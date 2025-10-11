@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from models.search_models import QueryRequest, QueryResponse
+from models.search_model import QueryRequest, QueryResponse
 from services.embedding_service import get_embedding_from_model_server
 from services.weaviate_service import search_similar_docs
 
