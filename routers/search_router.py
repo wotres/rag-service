@@ -14,7 +14,7 @@ async def search_by_query(request: QueryRequest):
     """
     try:
         query_vector = await get_embedding_from_model_server(request.query)
-        results = search_similar_docs(query_vector, top_k=3)
+        results = search_similar_docs(request.title, query_vector, top_k=3)
         return {"results": results}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

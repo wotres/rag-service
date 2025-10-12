@@ -3,6 +3,7 @@ from typing import List, Any
 
 
 class QueryRequest(BaseModel):
+    title: str
     query: str
 
 

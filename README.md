@@ -27,6 +27,7 @@ $ curl -X POST http://localhost:8001/search \
   -H "Content-Type: application/json" \
   -d '{
         "query": "fast api 란?"
+        "title": "FastAPI 소개",
       }'
       
 # RAG 문서 리스트 조회
